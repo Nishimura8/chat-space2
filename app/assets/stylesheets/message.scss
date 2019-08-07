@@ -1,0 +1,134 @@
+// Place all the styles related to the message controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.side-contents{
+    float:left;
+    width:300px; 
+    &__header{
+        height:100px;
+        background-color:#2f3e51;
+        align-items:center;
+        display:flex;
+        padding:0 20px;
+        &__box{
+            width:100%;
+            display:flex;
+            justify-content: space-between; 
+            p{
+            font-weight:bold;
+            color:white;
+            }
+        }
+    }
+    .groups{
+        padding:20px;
+        height:calc(100vh - 100px);
+        background-color:#2f3351;
+        box-sizing:border-box;
+        .group{
+            margin-bottom:40px;
+            color:white;
+            &__group-name{
+                text-decoration:none;
+                font-size:16px;
+                margin-bottom:5px;
+            }
+            &__latest-message{
+                font-size:5px;
+            }
+        }
+    }
+}
+.main{
+    width:calc(100vw - 300px);
+    float:left;
+    height:calc(100vh);
+    &__header{
+        height:99px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid 1px #eee;
+        overflow: scroll;
+        padding:0 40px;
+        &__left-box{
+            margin-top:35px;
+            &__current-group{
+                margin-bottom:15px;
+            }
+            &__member-list{
+                display: flex;
+                font-size: 12px;
+                color: #999999;
+                &__member2{
+                    margin-left:3px;
+                }
+            }
+        }
+        &__edit-btn{
+            border:solid 1px mediumseagreen;
+            color:mediumseagreen;
+            height:40px;
+            padding:0 20px;
+            line-height:40px;
+            text-decoration:none;
+            margin:28px 0 0 20px;
+        }
+    }
+    &__contents{
+        height:calc(100vh - 190px);
+        padding:46px 40px;
+        box-sizing: border-box;
+    }
+    &__form{
+        height:90px;
+        padding: 20px 40px;
+        background-color: #ddd;
+        box-sizing:border-box;
+        &__new-message{
+            display:flex;
+        }
+        input{
+            padding-left:20px;
+            height:50px;
+            width:100%;
+            position:relative;
+        }
+    }
+}
+.side-contents__header__box__menu{
+    display:flex;
+}
+.fa.fa-edit{
+    color:white;
+    margin-right:3px;
+}
+.fa.fa-cog{
+    color:white;
+}
+a{
+    text-decoration: none;
+}
+.input-box__image__file{
+    display:none;
+}
+.fa.fa-image{
+    position:absolute;
+    right:140px;
+    bottom:33px;
+    font-size:20px;
+    margin-right:25px;
+}
+.submit-btn{
+    width: 100px;
+    height: 50px;
+    padding: 0 27px;
+    background-color: #38aef0;
+    color: white; 
+    cursor: pointer; 
+    text-align:center;
+    margin:0 auto;
+    margin-left: 15px;
+}
+.input-box__image{
+    box-sizing:border-box;
+}

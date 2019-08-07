@@ -1,0 +1,36 @@
+.side-contents
+    .side-contents__header
+        .side-contents__header__box
+            %p 
+                西村
+            %ul.side-contents__header__box__menu
+                %li.side-contents__header__box__menu__new-group
+                    %a{:href => "/groups/new"}
+                        %i.fa.fa-edit
+                %li.side-contents__header__box__menu__edit-user
+                    %a{:href => "/users/745/edit"}
+                        %i.fa.fa-cog
+    .groups
+        %a{:href => "/groups/2994/messages"}
+            .group
+                %p.group__group-name あああ
+                %p.group__latest-message まだメッセージがありません
+.main
+    .main__header
+        .main__header__left-box
+            %h2.main__header__left-box__current-group{"data-group_id" => "2994"}
+                あああ
+            %ul.main__header__left-box__member-list
+                Member：
+                %li.main__header__left-box__member-list__member1 あああああ
+                %li.main__header__left-box__member-list__member2 西村
+        = link_to "" do
+            .main__header__edit-btn Edit
+    .main__contents
+    .main__form
+        .main__form__new-message
+            %input#main__form__new-message{:placeholder => "type a message", :type => "text"}/
+            %label.input-box__image{for: "message_image"}
+                %i.fa.fa-image
+                %input#message_image.input-box__image__file{:name => "message[image]", :type => "file"}/
+                %input.submit-btn{"data-disable-with" => "Send", :name => "commit", :type => "submit", :value => "Send"}/
