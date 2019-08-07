@@ -54,6 +54,7 @@
             margin-top:35px;
             &__current-group{
                 margin-bottom:15px;
+                font-size:20px;
             }
             &__member-list{
                 display: flex;
@@ -131,4 +132,26 @@ a{
 }
 .input-box__image{
     box-sizing:border-box;
+}
+.message{
+    margin-bottom:40px;
+    &__upper-info{
+        margin-bottom:10px;
+        display:flex;
+        &__talker{
+            color: #434a54;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        &__date{
+            color: #999999;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+    }
+    &__text{
+        color: #434a54;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
 }
